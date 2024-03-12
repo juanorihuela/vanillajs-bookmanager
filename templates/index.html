@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../static/vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <!-- bookmanager -->
+        <link rel="stylesheet" href="../static/books/css/style.css">
+
+        <title>Book Manager</title>
+    </head>
+    <body>
+
+        <main>
+            <!-- Banner -->
+            <section>
+                <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
+
+                    <!-- image -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" id="banner_image_container">
+                        </div>
+                    </div>
+
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 offset-md-6 text-center text-md-right" id="overlay_container">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Project -->
+            <section>
+                <div class="container mt-5">
+
+                    <!-- pre-project -->
+                    <div class="quote-section">
+                        <div class="container">
+                            <div class="row">
+
+                                <div id="phrase_div" class="col phrase_container">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <!-- items -->
+                            <div class="filtro-horizontal" id="genre_list">
+                                <!-- genres -->
+                            </div>                    
+                        </div>
+                    </div>
+
+                    <!-- items -->
+                    <div class="row" id="books_container">
+                        <!-- books -->
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+    </body>
+    <!-- Boostrap -->
+    <script src="../static/vendor/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!-- bookmanager -->
+    <script type="module" src="../static/books/js/index.js"></script>
+</html>

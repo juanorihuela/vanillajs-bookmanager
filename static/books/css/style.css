@@ -1,0 +1,159 @@
+/*
+Top Banner
+*/
+
+/* image */
+.carousel-item img{
+    max-height: 45vh;
+    object-fit: cover;
+    filter: grayscale(65%);
+}
+
+/* overlay */
+#carousel{
+    position: relative;
+}
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+
+
+/*
+Pre-project
+*/
+
+/* background */
+.quote-section {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+.quote-text {
+    font-size: 18px;
+    font-style: italic;
+    color: #333;
+}
+.phrase_container {
+    text-align: center;
+}
+
+/* phrase */
+.quote-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.quote-author {
+    font-size: 16px;
+    font-style: italic;
+    color: #666;
+}
+
+
+/*
+Genre Filter
+*/
+
+/* general */
+.filtro-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* item */
+.filtro-item {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    margin: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.filtro-item:hover {
+    background-color: #f0f0f0;
+}
+.filtro-item.active {
+    background-color: #31304D;
+    color: #fff;
+    transform: scale(0.9);
+}
+.filtro-item.disabled {
+    pointer-events: none;
+}
+
+/* 
+Book
+*/
+
+/* link */
+.book_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* card */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+}
+.card:hover {
+    transform: scale(1.05); /* Escala la tarjeta cuando se pasa el mouse sobre ella */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 50%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* genres */
+.badges {
+    margin-bottom: 10px;
+}
+.badge {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+}
+
+.text-bg-primary {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.text-bg-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+
+/* author */
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
